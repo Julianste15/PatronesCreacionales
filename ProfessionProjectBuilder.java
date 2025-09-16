@@ -1,5 +1,5 @@
 /** ConcreteBuilder */
-class ProfessionProjectBuilde extends ProjectBuilder{
+class ProfessionProjectBuilder extends ProjectBuilder{
     public void buildTitulo(){
         project.setTitulo("null");
     }
