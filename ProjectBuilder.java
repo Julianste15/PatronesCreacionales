@@ -3,7 +3,7 @@ abstract class ProjectBuilder {
    protected Project project;
    
    public Project getProyecto() {
-      return null;
+      return project;
    }
    
    public void crearNuevoProyecto() {

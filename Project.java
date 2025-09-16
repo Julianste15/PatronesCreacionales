@@ -1,4 +1,6 @@
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 class Project {
 
@@ -11,7 +13,7 @@ class Project {
     private String codirector1 = "";
     private String codirector2 = "";
     private String objetivoGeneral = "";
-    private String objetivosEspecificos = "";
+    private List<String> objetivosEspecificos = new ArrayList<>();
 
     public void setTitulo(String titulo) {
         this.titulo = titulo;
@@ -40,14 +42,25 @@ class Project {
     public void setObjetivoGeneral(String objetivoGeneral) {
         this.objetivoGeneral = objetivoGeneral;
     }
-    public void setObjetivosEspecificos(String objetivosEspecificos) {
-        this.objetivosEspecificos = objetivosEspecificos;
+    public void setObjetivosEspecificos(String newObjetivosEspecificos) {
+        if(objetivosEspecificos.size()< 4){
+            this.objetivosEspecificos.add(newObjetivosEspecificos);
+        }else{
+            System.out.println("No se pueden agregar mas de cuatros objetivos especificos");
+        }
+        
     }
     @Override
-    public String toString() {
-        return "project [titulo=" + titulo + ", modalidad=" + modalidad + ", nomEstudiante1=" + nomEstudiante1
-                + ", nomEstudiante2=" + nomEstudiante2 + ", fechaCreacion=" + fechaCreacion + ", director=" + director
-                + ", codirector1=" + codirector1 + ", codirector2=" + codirector2 + ", objetivoGeneral="
-                + objetivoGeneral + ", objetivosEspecificos=" + objetivosEspecificos + "]";
+public String toString() {
+        return "Proyecto: " + titulo + "\n" +
+               "Modalidad: " + modalidad + "\n" +
+               "Estudiante 1: " + nomEstudiante1 + "\n" +
+               "Estudiante 2: " + nomEstudiante2 + "\n" +
+               "Fecha: " + fechaCreacion + "\n" +
+               "Director: " + director + "\n" +
+               "Codirector1: " + codirector1 + "\n" +
+               "Codirector2: " + codirector2 + "\n" +
+               "Objetivo General: " + objetivoGeneral + "\n" +
+               "Objetivos Específicos: " + objetivosEspecificos + "\n";
     }
 }

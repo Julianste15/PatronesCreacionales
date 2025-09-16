@@ -1,64 +1,49 @@
+import java.util.Date;
+
 /** ConcreteBuilder */
 class ResearchProjectBuilder extends ProjectBuilder{
 
     @Override
     public void buildTitulo() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'buildTitulo'");
+        project.setTitulo("Proyecto de Investigación en Sistemas");
     }
-
     @Override
     public void buildModalidad() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'buildModalidad'");
+        project.setModalidad("Investigación");
     }
-
     @Override
     public void buildEstudiante1() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'buildEstudiante1'");
+        project.setNomEstudiante1("Estudiante A");
     }
-
     @Override
     public void buildEstudiante2() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'buildEstudiante2'");
+        project.setNomEstudiante2("Estudiante B"); // solo aplica en investigación
     }
-
     @Override
     public void buildFechaCreacion() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'buildFechaCreacion'");
+        project.setFechaCreacion(new Date());
     }
-
     @Override
     public void buildDirector() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'buildDirector'");
+        project.setDirector("Dr. Juan Pérez");
     }
-
     @Override
     public void buildCodirector1() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'buildCodirector1'");
+        project.setCodirector1("Codirector 1 opcional");
     }
-
     @Override
     public void buildCodirector2() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'buildCodirector2'");
+        // opcional, se puede dejar vacío
     }
-
     @Override
     public void buildObjetivoGeneral() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'buildObjetivoGeneral'");
+        project.setObjetivoGeneral("Desarrollar un sistema para apoyar la investigación.");
     }
-
     @Override
     public void buildObjetivosEspecificos() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'buildObjetivosEspecificos'");
+        project.setObjetivosEspecificos("Analizar el problema");
+        project.setObjetivosEspecificos("Diseñar la solución");
+        project.setObjetivosEspecificos("Implementar prototipo");
+        project.setObjetivosEspecificos("Validar resultados");
     }
-    
 }
