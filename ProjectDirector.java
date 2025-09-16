@@ -10,14 +10,15 @@ class ProjectDirector {
     }
 
     public void construirProyecto(){
+        projectBuilder.crearNuevoProyecto();
         projectBuilder.buildTitulo();
         projectBuilder.buildObjetivoGeneral();
         projectBuilder.buildObjetivosEspecificos();
-        projectBuilder.buildCodirector1();
-        projectBuilder.buildCodirector2();
-        projectBuilder.buildDirector();
+        projectBuilder.buildDirector();     // obligatorio
+        projectBuilder.buildCodirector1();  // opcional
+        projectBuilder.buildCodirector2();  // opcional
         projectBuilder.buildEstudiante1();
-        projectBuilder.buildEstudiante2();
+        projectBuilder.buildEstudiante2();  // puede ser opcional según modalidad
         projectBuilder.buildFechaCreacion();
         projectBuilder.buildModalidad();
     }

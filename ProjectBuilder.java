@@ -20,5 +20,4 @@ abstract class ProjectBuilder {
    public abstract void buildCodirector2();
    public abstract void buildObjetivoGeneral();
    public abstract void buildObjetivosEspecificos();
-
 }

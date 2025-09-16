@@ -17,9 +17,7 @@ class ProfessionProjectBuilder extends ProjectBuilder{
     }
 
     @Override
-    public void buildEstudiante2() {
-        // No aplica (solo un estudiante permitido)
-    }
+    public void buildEstudiante2() {}// No aplica (solo un estudiante permitido)
 
     @Override
     public void buildFechaCreacion() {
@@ -32,14 +30,10 @@ class ProfessionProjectBuilder extends ProjectBuilder{
     }
 
     @Override
-    public void buildCodirector1() {
-        // Opcional
-    }
+    public void buildCodirector1() {}// Opcional
 
     @Override
-    public void buildCodirector2() {
-        // Opcional
-    }
+    public void buildCodirector2() {}// Opcional
 
     @Override
     public void buildObjetivoGeneral() {

@@ -3,7 +3,7 @@ import java.util.Date;
 import java.util.List;
 
 class Project {
-
+    //atributos
     private String titulo = "";
     private String modalidad = "";
     private String nomEstudiante1 = "";
@@ -14,7 +14,7 @@ class Project {
     private String codirector2 = "";
     private String objetivoGeneral = "";
     private List<String> objetivosEspecificos = new ArrayList<>();
-
+    //setters
     public void setTitulo(String titulo) {
         this.titulo = titulo;
     }
@@ -51,7 +51,7 @@ class Project {
         
     }
     @Override
-public String toString() {
+    public String toString() {
         return "Proyecto: " + titulo + "\n" +
                "Modalidad: " + modalidad + "\n" +
                "Estudiante 1: " + nomEstudiante1 + "\n" +
